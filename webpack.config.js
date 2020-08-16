@@ -13,6 +13,7 @@ const jsLoaders = () => {
       loader: 'babel-loader',
       options: {
         presets: ['@babel/preset-env'],
+        plugins: ['@babel/plugin-proposal-class-properties'],
       },
     },
   ];
@@ -78,7 +79,7 @@ module.exports = {
             },
           },
           'css-loader',
-          'sass-loader'
+          'sass-loader',
         ],
       },
       {
